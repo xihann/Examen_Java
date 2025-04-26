@@ -66,7 +66,7 @@ import java.util.*;
                             Contacto contactoComparar = contactos.get(j);
                             String precision = calcularPrecision(contactoOrigen, contactoComparar);
 
-                            if (precision.equals("Alta")) { // Solo agregar coincidencias con puntuación positiva
+                            //if (precision.equals("Alta")) { // Solo agregar coincidencias con puntuación positiva
                                 String contactIdCoincidencia = contactoComparar.getContactID();
 
                                 // Crear una clave única para la coincidencia
@@ -81,7 +81,7 @@ import java.util.*;
                                             precision
                                     ));                                    coincidenciasRegistradas.add(claveCoincidencia); // Registrar la coincidencia
                                 }
-                            }
+                            //}
                         }
                     }
 
